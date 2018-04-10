@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="http://localhost:3000/" method="post">
+        <div>
+            <label for="personal info">Personal Information</label>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" autofocus>
+            </div>
+            <div>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_email">
+            </div>
+            <div>
+                <label for="number">Cell Number:</label>
+                <input type="tel" id="number" name="user_cell">
+            </div>
+            <div>
+                <label for="homepage">Homepage:</label>
+                <input type="url" id="homepage" name="user_homepage" disabled>
+            </div>
+            <br>
+        </div>
+        <div>
+            <label for="Prefcomm">What is your preferred communication method?</label>
+            <div>
+                <input type="radio" name="user_prefComm" value="email">
+                <label for="contactChoice1">Email</label>
+
+                <input type="radio" name="user_prefComm" value="phone">
+                <label for="contactChoice2">Phone</label>
+
+                <input type="radio" name="user_prefComm" value="smoke signals">
+                <label for="contactChoice3">Smoke Signals</label>
+            </div>
+            <br>
+        </div>
+        <div>
+            <label for="Devices">Which devices do you use?</label>
+            <div>
+                <input type="checkbox" name="user_devices" value='iOS'>
+                <label for="devices">iOS (iPhone/iPad)</label>
+            </div>
+            <div>
+                <input type="checkbox" name="user_devices" value="android">
+                <label for="devices">Android</label>
+            </div>
+            <div>
+                <input type="checkbox" name="user_devices" value='mac'>
+                <label for="devices">Mac</label>
+            </div>
+            <div>
+                <input type="checkbox" name="user_devices" value='windows'>
+                <label for="devices">Windows</label>
+            </div>
+            <div>
+                <input type="checkbox" name="user_devices" value='chrome OS'>
+                <label for="devices">Chrome OS (Chromebook)</label>
+            </div>
+            <div>
+                <input type="checkbox" name="user_devices" value='linux'>
+                <label for="devices">Linux</label>
+            </div>
+            <br>
+        </div>
+        <div>
+            <label>Your inquery</label>
+            <div>
+                <label>What are you mad about?</label>
+                <select name='user_subject'>
+                    <option value="broken">It's broken</option>
+                    <option value="mean">Employee was mean to me</option>
+                    <option value="mad">I'm just mad</option>
+                </select>
+            </div>
+            <div>
+                <label>How pissed are you?</label>
+                <input type="range" min="1" max="100" value="0" class="slider" name="user_pissed">
+            </div>
+            <div>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </div>
+        </div>
+        <div class="button">
+            <button type="submit">Send your message</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+
+</html>
